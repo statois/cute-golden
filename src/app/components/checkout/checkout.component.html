@@ -1,0 +1,143 @@
+
+<section id="contact" class="pages no-padding">
+    <div class="jumbotron" data-stellar-background-ratio="0.5">
+      <!-- Heading -->
+      <div class="jumbo-heading" data-stellar-background-ratio="1.2">
+        <h1>Inquire About {{pet.name}}</h1>
+      </div>
+    </div>
+</section>
+
+<section class="payment-form dark">
+    <div class="container">
+      <div class="content">
+        <div class="row">
+          <div class="col-md-12 col-lg-8">
+            <form method="POST" #checkoutForm="ngForm" (ngSubmit)="submit()"style="padding-left: 30px; padding-right: 30px;">
+              <br>
+              <h3 class="title"> Please Provide Accurate Details</h3>
+              <div class="form-group">
+                <select class="form-control" name="pet" [(ngModel)]="chosen" (change)="onChange($event.target.value)">
+                  <option *ngFor="let pet of pets" value="{{pet.id}}"><strong>Puppy of interest: {{pet.name}}</strong></option>
+                </select>
+                <!-- <input class="form-control" type="text" name="firstName" placeholder="First Name"
+                  [(ngModel)]="shipping.firstName" required="true"> -->
+              </div>
+    
+              <div class="form-group">
+                <input class="form-control" type="text" name="firstName" placeholder="Name..."
+                  [(ngModel)]="shipping.firstName" required="true">
+              </div>
+    
+              <div class="form-group">
+                <input class="form-control" type="text" name="phone" placeholder="Phone number"
+                  [(ngModel)]="shipping.phone" required="true">
+              </div>
+    
+    
+              <div class="form-group">
+                <input class="form-control" type="email" name="email" placeholder="Your email address"
+                  [(ngModel)]="shipping.email" required="true">
+              </div>
+    
+              <div class="form-group">
+                <input class="form-control" type="text" name="country" placeholder="Country"
+                  [(ngModel)]="shipping.country" required="true">
+              </div>
+    
+              <div class="form-group">
+                <input class="form-control" type="text" name="state" placeholder="State"
+                  [(ngModel)]="shipping.state" required="true">
+              </div>
+    
+              <!-- <div class="form-group">
+                <input class="form-control" type="text" name="city" placeholder="City"
+                  [(ngModel)]="shipping.city" required="true">
+              </div> -->
+    
+              <!-- <div class="form-group">
+                <input class="form-control" type="text" name="zip" placeholder="Zip Code"
+                  [(ngModel)]="shipping.zip" required="true">
+              </div> -->
+    
+              <div class="form-group">
+                <input class="form-control" type="text" name="address1" placeholder="Address "
+                  [(ngModel)]="shipping.address1" required="true">
+              </div>
+              <!-- <div class="form-group">
+                <input class="form-control" type="text" name="address2" placeholder="Address 2"
+                  [(ngModel)]="shipping.address2">
+              </div> -->
+    
+              <div class="form-group">
+                <textarea class="form-control " name="msg" placeholder="How Can We Help?"
+                  [(ngModel)]="shipping.notes"></textarea>
+              </div>
+              <div>
+                <div class="row">
+                  <div class="form-group col-sm-6 align-left">
+                    <h3 class="title">Payment Method</h3>
+                    <label class="radio">
+                      <input id="customRadio2" [(ngModel)]="shipping.paymentOption" value="Cashapp" name="payment-method"
+                        type="radio">
+                      <span>Cashapp</span>
+                    </label>
+                    <label class="radio">
+                      <input id="customRadio3" [(ngModel)]="shipping.paymentOption" value="Zelle" name="payment-method"
+                        type="radio">
+                      <span>Zelle</span>
+                    </label>
+                  </div>
+                  <!-- <div class="form-group col-sm-5 align-right">
+                    <p>How can we contact you</p>
+                    <label class="radio">
+                      <input id="r1" [(ngModel)]="shipping.contactOption" value="Phone" name="contact-method" type="radio">
+                      <span>Phone</span>
+                    </label>
+                    <label class="radio">
+                      <input id="r2" [(ngModel)]="shipping.contactOption" value="Email" name="contact-method" type="radio">
+                      <span>Email</span>
+                    </label>
+                    <label class="radio">
+                      <input id="r3" [(ngModel)]="shipping.contactOption" value="Whatsapp" name="contact-method" type="radio">
+                      <span>Whatsapp</span>
+                    </label>
+                  </div> -->
+                  <div class="form-group col-sm-12">
+                      <button type="submit" class="btn btn-block" [disabled]="!checkoutForm.valid || isLoading" >{{buttonMsg}}</button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="col-md-12 col-lg-4">
+            <form>
+              <div class="products">
+                <h3 class="title" >Puppy of interest</h3>
+                <div *ngFor="let item of items">
+                  <div class="item">
+                    <span class="price">${{getPrice(item)}}</span>
+                    <p class="item-name">{{item.pet.name}}</p>
+                  </div>
+                </div>
+                <!-- <div class="total">Total  <span class="price">${{total()}}</span></div> -->
+              </div>
+            </form>
+          </div>
+          <div class="col-md-12 col-lg-4">
+              <form>
+                <div class="products">
+                  <h3 class="title" >Shipping Info</h3>
+                  <div>
+                      Shipping fee varies by shipping address. Typically shipping is free for clients withing the US (as they can come pick their Puppy) while
+                      clients from other countries might have to pay about a $100 as shipping fee. We do provide free
+                      shipping worlwide at least once a week, so check by soon if you are interested in having your package
+                      shipped for free.
+                  </div>
+                </div>
+              </form>
+            </div>
+        </div>
+      </div>
+    </div>
+</section>

@@ -1,0 +1,82 @@
+<!-- Section Adopt -->
+<section id="adoption" class="pages">
+  <div class="jumbotron" data-stellar-background-ratio="0.5">
+     <!-- Heading -->
+     <div class="jumbo-heading" data-stellar-background-ratio="1.2">
+        <h1>Loving Puppies 😊</h1>
+     </div>
+  </div>
+  <!-- container-->
+  <div class="container">
+     <!-- row -->
+     <div class="row">
+        <div class="col-lg-6 col-md-6">
+           <!-- image -->
+           <img src="../../../assets/img/golden-retriever/image-12.jpg" alt="" class="center-block img-responsive img-rounded">
+        </div>
+        <!-- /col-lg-6 -->
+        <div class="col-lg-6 col-md-6 res-margin">
+           <h3>Find Your Best Friend</h3>
+           <p>And help break the cycle of pet overpopulation. There are not enough homes for all the animals that are born every year. Adopting from a shelter helps weaken the pet overpopulation cycle. Each year 8 to 12 million dogs, cats, puppies and kittens are euthanized because there are simply not enough homes for them.
+
+           </p>
+           <p>All pets that come to us are admitted by experienced staff. They are given vaccinations upon arrival and go through a behavior screening process. We have several vet partners that come to us weekly and are there to assist us with health care issues and concerns.
+           </p>
+           <h4>Benefits of sheltering a pet</h4>
+           <ul class="custom no-margin">
+              <li>Can benefit children.</li>
+              <li>You are saving a life.</li>
+              <li>Help break the cycle of pet overpopulation.</li>
+              <li>Can improve your health and make you happier.</li>
+              <li>Many of the animals are housetrained and full with unconditional love....</li>
+           </ul>
+           <!-- /ul custom-->
+        </div>
+        <!-- /col-lg-6 -->
+     </div>
+     <!-- row -->
+     <div class="row margin1">
+        <!-- Navigation -->
+        <div class="text-center col-md-12 margin1">
+           <ul class="nav nav-pills category text-center" role="tablist" id="adoptiontab">
+               <li class="active"><a href="adoption.html#" data-toggle="tab" data-filter="*">All PUPPIES</a>
+               <!-- <li><a href="adoption.html#" data-toggle="tab" data-filter="*">Dogs</a> -->
+           </ul>
+        </div>
+        <!-- Adoption gallery -->
+        <div class="col-md-12 margin1">
+           <div id="lightbox">
+              <div class="col-lg-4 col-sm-6 col-md-6 cat" *ngFor="let pet of pets">
+                 <div class="isotope-item">
+                    <div class="adoption-thumb">
+                       <a href="../pet/{{pet.id}}"><img class="img-responsive img-circle" src="{{pet.image}}" alt="{{pet.name}}"></a>
+                       <!-- header-->							  
+                       <div class="adopt-header">
+                          <h4>{{pet.name}}</h4>
+                          <ul class="list-unstyled">
+                              <li><strong>Gender:</strong>&nbsp; {{pet.gender}}</li>
+                              <li><strong>Age:</strong>&nbsp; {{pet.age}}</li>
+                              <li><strong>Price:<span style="color: #c37c5d;">&nbsp; ${{pet.price}}</span></strong></li>
+                           </ul>
+                          <a class="btn" href="../pet/{{pet.id}}" >Inquire</a>
+                       </div>
+                    </div>
+                 </div>
+              </div>
+           </div>
+           <!-- /lightbox-->
+        </div>
+        <!-- /col-lg-12 -->      
+     </div>
+     <!-- /row--> 
+  </div>
+  <!-- /container-->
+   <!-- /col-md-7-->
+   <div class="alert mt-5">
+      <h6 class="text-light">Important to note!....: </h6>
+      <p>We first thank you for using our platform to choose your puppy. We believe you taking a pet from us is not with bad intentions (eat, maltreat, rituals.. etc) but rather good intentions which include; looking for a friend, family member, companion, childrens' friend and all known good attitudes towards pets. For we believe pets are part of our everyday lifes, and part of our families, and need to be treated as good as family members are treated. Thanks.
+      </p>
+   </div>
+   <!-- /alert-->
+</section>
+<!-- /Section ends -->

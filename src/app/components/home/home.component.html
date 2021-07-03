@@ -1,0 +1,269 @@
+<ngx-json-ld [json]="schema"></ngx-json-ld>
+<ngx-json-ld [json]="navigationSchema"></ngx-json-ld>
+<!-- Full Page Image Background Slider -->
+<div class="slider-container">
+  <!-- Controls -->
+  <div class="slider-control left inactive"></div>
+  <div class="slider-control right"></div>
+  <ul class="slider-pagi"></ul>
+  <!--Slider -->
+  <div class="slider">
+     <!-- Slide 0 -->
+     <div class="slide slide-0 active" style="background-image:url('../../../assets/img/golden-retriever/image-4.jpg')">
+        <div class="slide__bg"></div>
+        <div class="slide__content">
+           <div class="slide__overlay">
+           </div>
+           <!-- slide text-->
+           <div class="slide__text">
+              <h1 class="slide__text-heading">Golden Retriever are lovable!</h1>
+              <div class="hidden-mobile">
+                 <p class="lead">We are a business community that bridge the boundary between dogs and dog lovers (most specialize in Golden Retriever). Dog lovers can find their adorable and healthy best friend with which they want to form a family.</p>
+                 <a href="/pets" class="btn btn-default">Available Puppies</a>
+              </div>
+           </div>
+        </div>
+     </div>
+     <!-- Slide 1 -->
+     <div class="slide slide-1" style="background-image:url('../../../assets/img/golden-retriever/image-9.jpg')">
+        <div class="slide__bg"></div>
+        <div class="slide__content">
+            <div class="slide__overlay">
+           </div>
+           <!-- slide text-->
+           <div class="slide__text">
+              <h1 class="slide__text-heading">Golden Retriever Puppies!</h1>
+              <div class="hidden-mobile">
+                 <p class="lead">Find your best friend and he/she will be happy to have you as a master.</p>
+                 <a href="/pets" class="btn btn-default">Available Puppies</a>
+              </div>
+           </div>
+        </div>
+     </div>
+  </div>
+<!--/Slider-->
+</div>
+<!--/ Slider ends -->
+<!-- SVG Curve Up -->
+<svg id="curveUp" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 100 100" preserveAspectRatio="none" fill="#fff">
+  <path d="M0 100 C 20 0 50 0 100 100 Z"/>
+</svg>    
+<!-- Section Services-index -->
+<section id="services-index" class="bg-pattern"  data-bottom-top="background-position: 0px 70%,99% 70%;"
+     data-top-bottom="background-position: 0px -50%,99% -50%;">
+  <!-- container -->
+  <div class="container">
+     <div class="section-heading">
+        <h2>About Us</h2>
+     </div>
+<!-- /section-heading-->
+     <div class="col-md-10 col-md-offset-1 text-center">
+        <p>Our Golden Retriever House help responsible Golden Retriever breeders place their puppies with caring individuals and families across the U.S. But, more than just a service, We are is a community of Dog lovers whose mission is to make lives better by placing healthy puppies/dogs into happy homes. The Golden Retriever House brand with puppies at the center, is rooted in the belief that pets in general should be celebrated, and owners deserve to experience trust, confidence and transparency when searching for their new companions.</p>
+     </div>
+<!-- /col-md-10-->
+  </div>
+</section>
+<!-- Section About-index -->
+<section id="about-index" class="bg-lightcolor1" style="padding-top: 0%; background-color: #f5f6f8;">
+   <h2 style="text-align: center; padding-bottom: 0%;">Available Puppies</h2>
+   <div class="row margin1">
+      <div class="col-md-12 margin1">
+         <div id="lightbox">
+            <div class="col-lg-4 col-sm-6 col-md-6 cat" *ngFor="let pet of pets">
+               <div class="isotope-item">
+                  <div class="adoption-thumb">
+                     <a href="../pet/{{pet.id}}"><img class="img-responsive img-circle" src="{{pet.image}}" alt="{{pet.name}}"></a>
+                     <!-- header-->							  
+                     <div class="adopt-header">
+                        <h4>{{pet.name}}</h4>
+                        <ul class="list-unstyled">
+                           <li><strong>Gender:</strong>&nbsp; {{pet.gender}}</li>
+                           <li><strong>Age:</strong>&nbsp; {{pet.age}}</li>
+                           <li><strong>Price:<span style="color: #c37c5d;">&nbsp; ${{pet.price}}</span></strong></li>
+                        </ul>
+                       <a class="btn" href="../pet/{{pet.id}}" >Inquire</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+<!-- /section ends -->
+<div class="container-fluid">
+  <!-- Section Call to action -->
+  <section class="call-to-action small-section bg1" data-stellar-background-ratio="0.2">
+     <div class="container text-center">
+        <!-- well -->
+        <div class="col-md-5 bg-darkcolor well">
+           <div class="col-md-12">
+              <h4>Subscribe to our newsletter</h4>
+              <p>Subscribe to be updated on our newly born puppies..</p>
+              <!-- Form -->				
+              <div id="mc_embed_signup" class="margin1">
+                 <!-- your form adresss in the line bellow -->
+                 <form #contactForm="ngForm" (ngSubmit)="submit()" class="validate" target="_blank" novalidate>
+                    <div id="mc_embed_signup_scroll">
+                       <div class="mc-field-group">
+                          <div class="input-group">
+                             <input class="form-control input-lg required email" type="email" value="" name="EMAIL" placeholder="Your email here" id="mce-EMAIL" [(ngModel)]="contact.email">
+                             <span class="input-group-btn">
+                             <button class="btn" type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe">Subscribe</button>
+                             </span>
+                          </div>
+                          
+                       </div>
+                       <!-- /mc-fiel-group -->									
+                    </div>
+                    <!-- /mc_embed_signup_scroll -->
+                 </form>
+                 <!-- /form ends -->								
+              </div>
+              <!-- /mc_embed_signup -->
+           </div>
+           <!-- /col-md-12 -->
+        </div>
+        <!-- /col-md-6 -->
+     </div>
+     <!-- /container -->
+  </section>
+  <!-- /Section ends -->
+</div>
+<!-- /container-fluid -->
+<!-- Section Reviews -->
+<section id="reviews">
+  <div class="container">
+     <div class="section-heading text-center">
+        <h2>Clients Reviews</h2>
+     </div>
+     <!-- Parallax object -->
+     <div class="parallax-object2 hidden-sm hidden-xs hidden-md" 
+        data-100-start="transform:rotate(-0deg); left:20%;" 
+        data-top-bottom="transform:rotate(-370deg);">
+        <!-- Image -->
+        <img src="../../../assets/img/illustrations/toy.png" alt="">
+     </div>
+     <!-- /col-md-3 -->
+     <div class="col-md-9 col-md-offset-3">
+        <!-- Reviews -->
+     <div id="owl-reviews" class="owl-carousel margin1">
+        
+        <!-- review 2 -->
+        <div class="review">
+           <div class="col-xs-12">
+              <!-- caption -->
+              <div class="review-caption">
+                 <h5>Drew James</h5>
+                 <div class="small-heading">
+                    Dog Specialist
+                 </div>
+                 <blockquote>
+                  So far it was great working with you cause of your reliable services. If your are a dog lover and loves newly born dogs, then you need not going far cause your are already at the right place. happy living with your dogs.
+               </blockquote>
+              </div>
+              <!-- Profile image -->
+              <div class="review-profile-image">
+                 <img src="../../../assets/img/golden-retriever/logo.png" alt=""/>                      
+              </div>
+              <!--/review profile image -->
+           </div>
+           <!-- /col-xs-12 ends -->
+        </div>
+        <!-- /review-->
+        <!-- review 3 -->
+        <div class="review">
+           <div class="col-xs-12">
+              <!-- caption -->
+              <div class="review-caption">
+                 <h5>Anishka Gland</h5>
+                 <div class="small-heading">
+                    Dog lover
+                 </div>
+                 <blockquote>
+                  I had to receive my puppy "Mully" before sending any review. Fortunately my pretty Mully arrived to me while baking with his cute little voice. Am just glad it was worth taking the risk.
+               </blockquote>
+              </div>
+              <!-- Profile image -->
+              <div class="review-profile-image">
+                 <img src="../../../assets/img/golden-retriever/logo.png" alt=""/>                       
+              </div>
+              <!--/review profile image -->
+           </div>
+           <!-- /col-xs-12 ends -->
+        </div>
+        <!-- /review-->
+        
+     </div>
+     <!-- /owl-carousel -->
+     </div>
+     <!-- /col-md-10 -->
+  </div>
+  <!-- /.container -->
+</section>
+<!-- /Section ends -->
+<!-- callout-->		   
+<section class="callout container-fluid no-padding">
+<!-- row-fluid -->
+  <div class="row-fluid">
+     <div class="col-lg-8 col-md-12 no-padding" data-start="right: 20%;" 
+        data-center="right:0%;">
+        <!-- image  -->
+        <img src="../../../assets/img/golden-retriever/image-7.jpg" class="img-responsive img-rounded" alt="">
+     </div>
+     <!-- text box  -->
+     <div class="callout-box col-lg-6 col-lg-offset-6 bg-darkcolor"  data-start="left: 20%;" 
+        data-center="left:0%;">
+        <h3>We Love Pets</h3>
+        <p>And we believe pets are part of our everyday lives and part of our families. They provide us with companionship but also with emotional support, reduce our stress levels, sense of loneliness and help us to increase our social activities and add to a child's self-esteem and positive emotional development</p>
+        <a href="/contact" class="btn">Contact us</a>
+     </div>
+     <!-- /callout-box  -->
+  </div>
+  <!-- /row-fluid -->
+</section>
+<!-- /callout -->
+
+<!-- Section Contact  -->
+<section id="contact-index">
+  <div class="container">
+     <div class="section-heading">
+        <h2>Contact Us</h2>
+     </div>
+     <div class="col-lg-7 col-lg-offset-5 col-md-8 col-md-offset-2">
+        <!-- contact info -->
+        <h4>Information </h4>
+        <ul class="list-inline">
+           <li><i class="fa fa-envelope"></i><a href="mailto:info@cutegoldretrievers.com">info@cutegoldretrievers.com</a></li>
+           <li><i class="fa fa-phone margin-icon"></i>Call Us +1 (424) 528-0107</li>
+           <li><i class="fa fa-map-marker margin-icon"></i>Oklahoma City 73106, 2000 N Classen Blvd, USA</li>
+        </ul>
+        <!-- address info -->
+        <p>Keep in touch and get the best out of our best. Your worry is our concern. 
+        </p>
+        <h4 class="margin1">Send us a Message</h4>
+        <!-- Form Starts -->
+        <form id="contact_form" #contactForm="ngForm" (ngSubmit)="submit()">
+           <div class="form-group">
+              <label>Name<span class="required">*</span></label>
+              <input type="text" name="name" class="form-control input-field" required="true" [(ngModel)]="contact.name" placeholder="name">                    
+              <label>Email Adress <span class="required">*</span></label>
+              <input type="email" name="email" class="form-control input-field" required="true" [(ngModel)]="contact.email" placeholder="email">           
+              <label>Phone Number <span class="required">*</span></label>
+              <input type="text" name="phone" class="form-control input-field" required="true" placeholder="phone number" [(ngModel)]="contact.phone">           
+              <label>Subject</label>
+              <input type="text" name="subject" class="form-control input-field" required="false" [(ngModel)]="contact.subject" placeholder="subject">                            
+              <label>Message<span class="required">*</span></label>
+              <textarea name="message" id="message" class="textarea-field form-control" rows="3"  required="true" [(ngModel)]="contact.message" placeholder="How can we help you..."></textarea>
+           </div>
+           <button type="submit" id="submit_btn" value="Submit" class="btn center-block" [disabled]="!contactForm.valid || isLoading">{{buttonMsg}}</button>
+         </form>
+        <!-- Contact results -->
+        <div id="contact_results"></div>
+     </div>
+     <!-- Contact -->
+     <!-- /col-lg-5-->
+  </div>
+  <!-- /container -->
+</section>
+<!-- /Section ends -->	

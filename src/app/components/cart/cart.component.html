@@ -1,0 +1,67 @@
+
+
+<section id="contact" class="pages no-padding">
+  <div class="jumbotron" data-stellar-background-ratio="0.5">
+    <!-- Heading -->
+    <div class="jumbo-heading" data-stellar-background-ratio="1.2">
+      <h1>Shopping Cart</h1>
+    </div>
+  </div>
+</section>
+
+<section class="shopping-cart dark">
+  <div class="container">
+    <div class="content">
+      <div class="row">
+        <div class="col-md-12 col-lg-8">
+            <div class="product" *ngIf="cartEmpty == true">
+              <h2 style="text-align: center;">Your Cart is Empty!</h2>
+            </div>
+          <!-- looping over cart items -->
+          <div class="items" *ngFor="let item of items">
+            <div class="product">
+              <div class="row">
+                <div class="col-md-3">
+                  <img class="img-fluid mx-auto d-block image" src="{{item.pet.cartImage}}" alt="{{item.pet.name}}">
+                </div>
+                <div class="col-md-8">
+                  <div class="info">
+                    <div class="row">
+                      <div class="col-md-5 product-name">
+                        <div class="product-name">
+                          <a href="#">{{item.pet.name}}</a>
+                          <div class="product-info">
+                            <div>Gender: <span class="value">{{item.pet.gender}}</span></div>
+                            <div>Age: <span class="value">{{item.pet.age}}</span></div>
+                            <div>Size: <span class="value">{{item.pet.size}}</span></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 price">
+                        <div class="product-info"><span class="value">${{getPrice(item)}}</span></div>
+                      </div>
+                      <div class="col-md-3 ">
+                          <button (click)="delete(item)" class="btn btn-primary btn-sm">Remove</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-12 col-lg-4">
+          <div class="summary">
+            <h3>Summary</h3>
+            <div class="summary-item"><span class="text">Subtotal</span><span class="price">${{total()}}</span></div>
+            <div class="summary-item"><span class="text">Discount</span><span class="price">${{discount()}}</span></div>
+            <div class="summary-item"><span class="text">Total</span><span class="price">${{grandTotal()}}</span></div>
+            <a routerLink="../checkout" class="btn btn-primary btn-lg btn-block" >Checkout</a>
+          </div>
+        </div>
+      </div> 
+    </div>
+  </div>
+</section>
+

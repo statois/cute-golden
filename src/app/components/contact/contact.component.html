@@ -1,0 +1,55 @@
+
+
+
+<!-- Section Contact -->
+<section id="contact" class="pages no-padding">
+   <div class="jumbotron" data-stellar-background-ratio="0.5">
+      <!-- Heading -->
+      <div class="jumbo-heading" data-stellar-background-ratio="1.2">
+         <h1>Contact Us</h1>
+      </div>
+   </div>
+   <!-- container -->
+   <div class="container">
+      <div class="row">
+         <!-- Contact Info -->
+         <div class="col-lg-5 col-md-5">
+            <h3>Information </h3>
+            <ul class="list-inline">
+               <li><i class="fa fa-envelope"></i><a href="mailto:info@cutegoldretrievers.com">info@cutegoldretrievers.com</a></li>
+               <li><i class="fa fa-phone margin-icon"></i>Call Us +1 (424) 528-0107</li>
+               <li><i class="fa fa-map-marker margin-icon"></i>Oklahoma City 73106, 2000 N Classen Blvd, USA.</li>
+            </ul>
+            <!-- address info -->
+            <p>We believe pets are part of our everyday lives and part of our families. They provide us with companionship but also with emotional support, reduce our stress levels, sense of loneliness and help us to increase our social activities and add to a child's self-esteem and positive emotional development.
+               Your worries about pets are our concern.
+            </p>
+            <img src="../../../assets/img/golden-retriever/image-2.jpg" alt="" class="img-rounded center-block img-responsive">
+         </div>
+         <!-- /col-lg-5-->
+         <!-- Contact Form -->
+         <div class="col-lg-6 col-md-6 col-lg-offset-1 col-md-offset-1 res-margin">
+            <h3>Write us</h3>
+            <!-- Form Starts -->
+            <form id="contact_form" #contactForm="ngForm" (ngSubmit)="submit()">
+               <div class="form-group">
+                  <label>Name<span class="required">*</span></label>
+                  <input type="text" name="name" class="form-control input-field" required="true" placeholder="name" [(ngModel)]="contact.name">
+                  <label>Email Adress <span class="required">*</span></label>
+                  <input type="email" name="email" class="form-control input-field" required="true" placeholder="email" [(ngModel)]="contact.email">
+                  <label>Phone Number <span class="required">*</span></label>
+                  <input type="text" name="phone" class="form-control input-field" required="true" placeholder="phone number" [(ngModel)]="contact.phone">
+                  <label>Subject</label>
+                  <input type="text" name="subject" class="form-control input-field" required="false" placeholder="subject" [(ngModel)]="contact.subject">
+                  <label>Message<span class="required">*</span></label>
+                  <textarea name="message" id="message" class="textarea-field form-control" rows="3" required="true" placeholder="Enter your message here..." [(ngModel)]="contact.message"></textarea>
+               </div>
+               <button type="submit" id="submit_btn" value="Submit" class="btn center-block" [disabled]="!contactForm.valid || isLoading">{{buttonMsg}}</button>
+            </form>
+         </div>
+         <!--/col-lg-6 -->
+      </div>
+      <!-- /row-->
+   </div>
+</section><br><br>
+<!-- /Section ends -->
