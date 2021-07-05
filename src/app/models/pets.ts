@@ -112,14 +112,14 @@ export const PETS: Pet[] = [
     id: 'golden-retriever-prada', name: 'PRADA', image: 'assets/img/golden-retriever/puppies/backup/Prada-1.jpg', cartImage: 'assets/img/cartImage/adopt.jpg',
     gender: 'Female', age: "15 weeks", vaccinated: 'yes', size: 'big', price: 600,
     petCategory: "Golden Retriever",
-    description1: "This is an adult Golden Retriever female parent for some litter puppies on our premises.",
+    description1: "This guy isn’t lacking when it comes to creativity though he is calm and cool! He’s super friendly and loves everyone who loves him. This baby is going to make a great companion and be very loyal to his family. He is just adorable and I’m sure you’ll fall in love with him at first sight. Prada has a complete vet check and up-to-date on his vaccinations.",
   } as Pet,
 
   {
     id: 'golden-retriever-luke', name: 'LUKE', image: 'assets/img/golden-retriever/puppies/backup/Luke.jpg', cartImage: 'assets/img/cartImage/adopt.jpg',
-    gender: 'Male', age: "16 weeks", vaccinated: 'yes', size: 'big', price: 600,
+    gender: 'Male', age: "9 weeks", vaccinated: 'yes', size: 'smal', price: 835,
     petCategory: "Golden Retriever",
-    description1: "This is an adult Golden Retriever male parent for some litter puppies on our premises.",
+    description1: "Luke is a calm and cool when it comes to personality, but can also be friendly and loves others around him. This baby is going to make a great puppy and playmate to his family. He likes aeting a lot and be sure he's gonna grow big in a space of no time. He is just adorable and up-to-date on all shots",
   } as Pet,
 
 ];
