@@ -193,6 +193,52 @@
            <!-- /col-xs-12 ends -->
         </div>
         <!-- /review-->
+
+        <!-- review 3 -->
+        <div class="review">
+         <div class="col-xs-12">
+            <!-- caption -->
+            <div class="review-caption">
+               <h5>Mrs Yuk</h5>
+               <div class="small-heading">
+                  Foster Parent
+               </div>
+               <blockquote>
+                  It was nevertheless a good experience and relation we had with those two puppies though we had to be very attentive as they were too fragile on their arrival but are strong loving puppies now. Please don't hesitate to contact us on any need puppy. Thanks.
+             </blockquote>
+            </div>
+            <!-- Profile image -->
+            <div class="review-profile-image">
+               <img src="../../../assets/img/golden-retriever/logo.png" alt=""/>                       
+            </div>
+            <!--/review profile image -->
+         </div>
+         <!-- /col-xs-12 ends -->
+      </div>
+      <!-- /review-->
+
+      <!-- review 3 -->
+      <div class="review">
+         <div class="col-xs-12">
+            <!-- caption -->
+            <div class="review-caption">
+               <h5>Yasmine K.</h5>
+               <div class="small-heading">
+                  Dog Lover
+               </div>
+               <blockquote>
+                  I immediately fell in love with that gold yellow color on seeing her. She's getting old now and eat a lot!! lol.
+             </blockquote>
+            </div>
+            <!-- Profile image -->
+            <div class="review-profile-image">
+               <img src="../../../assets/img/golden-retriever/logo.png" alt=""/>                       
+            </div>
+            <!--/review profile image -->
+         </div>
+         <!-- /col-xs-12 ends -->
+      </div>
+      <!-- /review-->
         
      </div>
      <!-- /owl-carousel -->
@@ -224,46 +270,5 @@
 </section>
 <!-- /callout -->
 
-<!-- Section Contact  -->
-<section id="contact-index">
-  <div class="container">
-     <div class="section-heading">
-        <h2>Contact Us</h2>
-     </div>
-     <div class="col-lg-7 col-lg-offset-5 col-md-8 col-md-offset-2">
-        <!-- contact info -->
-        <h4>Information </h4>
-        <ul class="list-inline">
-           <li><i class="fa fa-envelope"></i><a href="mailto:info@cutegoldretrievers.com">info@cutegoldretrievers.com</a></li>
-           <li><i class="fa fa-phone margin-icon"></i>Call Us +1 (424) 528-0107</li>
-           <li><i class="fa fa-map-marker margin-icon"></i>Oklahoma City 73106, 2000 N Classen Blvd, USA</li>
-        </ul>
-        <!-- address info -->
-        <p>Keep in touch and get the best out of our best. Your worry is our concern. 
-        </p>
-        <h4 class="margin1">Send us a Message</h4>
-        <!-- Form Starts -->
-        <form id="contact_form" #contactForm="ngForm" (ngSubmit)="submit()">
-           <div class="form-group">
-              <label>Name<span class="required">*</span></label>
-              <input type="text" name="name" class="form-control input-field" required="true" [(ngModel)]="contact.name" placeholder="name">                    
-              <label>Email Adress <span class="required">*</span></label>
-              <input type="email" name="email" class="form-control input-field" required="true" [(ngModel)]="contact.email" placeholder="email">           
-              <label>Phone Number <span class="required">*</span></label>
-              <input type="text" name="phone" class="form-control input-field" required="true" placeholder="phone number" [(ngModel)]="contact.phone">           
-              <label>Subject</label>
-              <input type="text" name="subject" class="form-control input-field" required="false" [(ngModel)]="contact.subject" placeholder="subject">                            
-              <label>Message<span class="required">*</span></label>
-              <textarea name="message" id="message" class="textarea-field form-control" rows="3"  required="true" [(ngModel)]="contact.message" placeholder="How can we help you..."></textarea>
-           </div>
-           <button type="submit" id="submit_btn" value="Submit" class="btn center-block" [disabled]="!contactForm.valid || isLoading">{{buttonMsg}}</button>
-         </form>
-        <!-- Contact results -->
-        <div id="contact_results"></div>
-     </div>
-     <!-- Contact -->
-     <!-- /col-lg-5-->
-  </div>
-  <!-- /container -->
-</section>
+
 <!-- /Section ends -->	

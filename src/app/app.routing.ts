@@ -19,6 +19,7 @@ const routes: Routes = [
     {path: '', component: HomeComponent, data: {title: 'Best Bulldogs Home'}},
     {path: 'about', component: AboutComponent, data: {title: 'About'}},
     {path: 'service', component: ServiceComponent, data: {title: 'Services'}},
+    {path: 'shipping-policy', component: TeamComponent, data: {title: 'Shipping Policy'}},
     {path: 'testimonials', component: TestimonialsComponent, data: {title: 'Testimonials'}},
     {path: 'pets', component: PetsComponent, data: {title: 'Pets'}},
     {path: 'gallery', component: GalleryComponent, data: {title: 'Gallery'}},
