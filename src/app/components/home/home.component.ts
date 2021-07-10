@@ -31,12 +31,12 @@ export class HomeComponent implements OnInit {
 
 
   constructor(
-    private productService: PetService, 
+    private productService: PetService,
     private apiService: ApiService,
     private seoService: SEOService) {
-      var now = new Date(), y = now.getFullYear(), m = now.getMonth();
-      this.date = new Date(y, m + 1, 0);
-      console.log(this.date.toUTCString())
+    var now = new Date(), y = now.getFullYear(), m = now.getMonth();
+    this.date = new Date(y, m + 1, 0);
+    console.log(this.date.toUTCString())
   }
 
   ngOnInit() {
@@ -94,7 +94,7 @@ export class HomeComponent implements OnInit {
     this.schema = {
       "@context": "http://schema.org",
       "@type": "WebSite",
-      "name": "Best Bulldogs Home",
+      "name": "Golden Retriever Puppies",
       "url": "https://www.cutegoldretrievers.com",
       "sameAs": ["https://instagram.com/cutegoldretrievers"],
       "potentialAction": {
@@ -143,30 +143,37 @@ export class HomeComponent implements OnInit {
   submit() {
     this.buttonMsg = "Loading..."
     this.apiService.contact(this.contact)
-    .subscribe((data: any) => {
-      this.isLoading = true;
-      Swal({
-        title: 'Thanks!',
-        text: 'Thank you! Your message has been received. We will contact you as soon as possible',
-        type: 'success',
-        confirmButtonText: 'Ok',
-        confirmButtonColor: '#c37c5d'
-      })
-      this.contact = new Contact();
-      this.isLoading = false;
-      this.buttonMsg = "Send Message";
-    },
-      (err: HttpErrorResponse) => {
-        this.isLoading = false;
+      .subscribe((data: any) => {
+        this.isLoading = true;
         Swal({
-          title: 'Error!',
-          text: 'Unable to send message. Make sure you are connected to the internet',
-          type: 'warning',
-          confirmButtonText: 'Ok got it!',
+          title: 'Thanks!',
+          text: 'Thank you! Your message has been received. We will contact you as soon as possible',
+          type: 'success',
+          confirmButtonText: 'Ok',
           confirmButtonColor: '#c37c5d'
         })
+        this.contact = new Contact();
+        this.isLoading = false;
         this.buttonMsg = "Send Message";
-      });
+      },
+        (err: HttpErrorResponse) => {
+          this.isLoading = false;
+          Swal({
+            title: 'Error!',
+            text: 'Unable to send message. Make sure you are connected to the internet',
+            type: 'warning',
+            confirmButtonText: 'Ok got it!',
+            confirmButtonColor: '#c37c5d'
+          })
+          this.buttonMsg = "Send Message";
+        });
 
+  }
+
+  printPrice(price : number)
+  {
+    var price_parts = price.toString().split(".");
+    price_parts[0] = price_parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    return price_parts.join(".");
   }
 }

@@ -39,7 +39,7 @@ export class PetComponent implements OnInit {
         this.router.navigate(["/"]);
       }
     })
-    this.titleService.setTitle("About " + this.pet.name )
+    this.titleService.setTitle("About " + this.pet.name)
   }
 
   addToCart() {
@@ -47,6 +47,13 @@ export class PetComponent implements OnInit {
     item.pet = this.pet;
     this.cartService.add(item);
     // this.router.navigate(["/checkout/{{this.pet.id}}"])
-}
+  }
+
+  printPrice(price : number)
+  {
+    var price_parts = price.toString().split(".");
+    price_parts[0] = price_parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    return price_parts.join(".");
+  }
 
 }

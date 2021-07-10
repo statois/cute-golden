@@ -142,4 +142,11 @@ export class CheckoutComponent implements OnInit {
     this.pet = item.pet
     this.cartService.add(item)
   }
+
+  printPrice(price : number)
+  {
+    var price_parts = price.toString().split(".");
+    price_parts[0] = price_parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    return price_parts.join(".");
+  }
 }

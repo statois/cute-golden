@@ -35,7 +35,7 @@ export const PETS: Pet[] = [
 
   {
     id: 'golden-retriever-flore', name: 'FLORE', image: 'assets/img/golden-retriever/puppies/backup/flore.jpeg', cartImage: 'assets/img/cartImage/adopt.jpg',
-    gender: 'Female', age: "8 weeks", vaccinated: 'yes', size: 'small', price: 800,
+    gender: 'Female', age: "8 weeks", vaccinated: 'yes', size: 'small', price: 1300,
     petCategory: "Golden Retriever",
     registered: "AKC Registered",
     status: true,
@@ -44,7 +44,7 @@ export const PETS: Pet[] = [
 
   {
     id: 'golden-retriever-susan', name: 'SUSAN', image: 'assets/img/golden-retriever/puppies/backup/susan.jpeg', cartImage: 'assets/img/cartImage/adopt.jpg',
-    gender: 'Female', age: "9 weeks", vaccinated: 'yes', size: 'small', price: 800,
+    gender: 'Female', age: "9 weeks", vaccinated: 'yes', size: 'small', price: 1300,
     petCategory: "Golden Retriever",
     registered: "AKC Registered",
     status: true,
@@ -53,7 +53,7 @@ export const PETS: Pet[] = [
 
   {
     id: 'golden-retriever-romeo', name: 'ROMEO', image: 'assets/img/golden-retriever/puppies/backup/romeo.jpeg', cartImage: 'assets/img/cartImage/adopt.jpg',
-    gender: 'Male', age: "8 weeks", vaccinated: 'yes', size: 'small', price: 800,
+    gender: 'Male', age: "8 weeks", vaccinated: 'yes', size: 'small', price: 1100,
     petCategory: "Golden Retriever",
     registered: "AKC Registered",
     status: true,
@@ -62,7 +62,7 @@ export const PETS: Pet[] = [
 
   {
     id: 'golden-retriever-lucy', name: 'LUCY', image: 'assets/img/golden-retriever/puppies/backup/Lucy.jpg', cartImage: 'assets/img/cartImage/adopt.jpg',
-    gender: 'Female', age: "8 weeks", vaccinated: 'yes', size: 'small', price: 845,
+    gender: 'Female', age: "8 weeks", vaccinated: 'yes', size: 'small', price: 1300,
     petCategory: "Golden Retriever",
     registered: "AKC Registered",
     status: true,
@@ -71,7 +71,7 @@ export const PETS: Pet[] = [
 
   {
     id: 'golden-retriever-harna', name: 'HARNA', image: 'assets/img/golden-retriever/puppies/backup/Harna.jpg', cartImage: 'assets/img/cartImage/adopt.jpg',
-    gender: 'Female', age: "8 weeks", vaccinated: 'yes', size: 'small', price: 845,
+    gender: 'Female', age: "8 weeks", vaccinated: 'yes', size: 'small', price: 1300,
     petCategory: "Golden Retriever",
     registered: "AKC Registered",
     status: true,
@@ -80,7 +80,7 @@ export const PETS: Pet[] = [
 
   {
       id: 'golden-retriever-sarah', name: 'SARAH', image: 'assets/img/golden-retriever/puppies/backup/sarah.jpg', cartImage: 'assets/img/cartImage/adopt.jpg',
-      gender: 'Female', age: "8 weeks", vaccinated: 'yes', size: 'small', price: 845,
+      gender: 'Female', age: "8 weeks", vaccinated: 'yes', size: 'small', price: 1200,
        petCategory: "Golden Retriever",
        registered: "AKC Registered",
        status: true,
@@ -98,7 +98,7 @@ export const PETS: Pet[] = [
 
   {
     id: 'golden-retriever-mark', name: 'MARK', image: 'assets/img/golden-retriever/puppies/backup/mark-1.jpg', cartImage: 'assets/img/cartImage/adopt.jpg',
-    gender: 'Male', age: "9 weeks", vaccinated: 'yes', size: 'small', price: 800,
+    gender: 'Male', age: "9 weeks", vaccinated: 'yes', size: 'small', price: 1000,
     petCategory: "Golden Retriever",
     registered: "AKC Registered",
     status: true,
@@ -116,7 +116,7 @@ export const PETS: Pet[] = [
 
   {
     id: 'golden-retriever-marley', name: 'MARLEY', image: 'assets/img/golden-retriever/puppies/backup/marley.jpg', cartImage: 'assets/img/cartImage/adopt.jpg',
-    gender: 'Male', age: "8 weeks", vaccinated: 'yes', size: 'small', price: 900,
+    gender: 'Male', age: "8 weeks", vaccinated: 'yes', size: 'small', price: 1100,
     petCategory: "Golden Retriever",
     registered: "AKC Registered",
     status: true,
@@ -125,7 +125,7 @@ export const PETS: Pet[] = [
 
   {
     id: 'golden-retriever-roman', name: 'ROMAN', image: 'assets/img/golden-retriever/puppies/backup/roman.jpg', cartImage: 'assets/img/cartImage/adopt.jpg',
-    gender: 'Male', age: "9 weeks", vaccinated: 'yes', size: 'small', price: 845,
+    gender: 'Male', age: "9 weeks", vaccinated: 'yes', size: 'small', price: 1100,
     petCategory: "Golden Retriever",
     registered: "AKC Registered",
     status: true,
@@ -134,7 +134,7 @@ export const PETS: Pet[] = [
 
   {
     id: 'golden-retriever-prada', name: 'PRADA', image: 'assets/img/golden-retriever/puppies/backup/Prada-1.jpg', cartImage: 'assets/img/cartImage/adopt.jpg',
-    gender: 'Female', age: "15 weeks", vaccinated: 'yes', size: 'big', price: 600,
+    gender: 'Female', age: "15 weeks", vaccinated: 'yes', size: 'big', price: 1200,
     petCategory: "Golden Retriever",
     registered: "AKC Registered",
     status: true,
@@ -143,7 +143,7 @@ export const PETS: Pet[] = [
 
   {
     id: 'golden-retriever-luke', name: 'LUKE', image: 'assets/img/golden-retriever/puppies/backup/Luke.jpg', cartImage: 'assets/img/cartImage/adopt.jpg',
-    gender: 'Male', age: "9 weeks", vaccinated: 'yes', size: 'smal', price: 835,
+    gender: 'Male', age: "9 weeks", vaccinated: 'yes', size: 'smal', price: 1100,
     petCategory: "Golden Retriever",
     registered: "AKC Registered",
     status: true,

@@ -116,7 +116,7 @@
                 <h3 class="title" >Puppy of interest</h3>
                 <div *ngFor="let item of items">
                   <div class="item">
-                    <span class="price">${{getPrice(item)}}</span>
+                    <span class="price">${{printPrice(getPrice(item))}}</span>
                     <p class="item-name">{{item.pet.name}}</p>
                   </div>
                 </div>

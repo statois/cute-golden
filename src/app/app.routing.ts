@@ -29,7 +29,8 @@ const routes: Routes = [
     {path: 'checkout/:id', component: CheckoutComponent, data: {title: 'Checkout'}},
     {path: 'privacy', component: PrivacyComponent, data: {title: 'Privacy Policy'}},
     {path: 'termsOfService', component: TermsOfServiceComponent, data: {title: 'Term of Service'}},
-    {path: 'search', component: SearchComponent, data: {title: 'Pets'}},
+    // {path: 'search', component: SearchComponent, data: {title: 'Pets'}},
+    
 
     {
         path: 'pet/:id', component: PetParentComponent,
