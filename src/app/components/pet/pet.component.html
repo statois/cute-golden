@@ -38,7 +38,9 @@
                      <ul class="pet-adopt-info">
                         <!-- <li><strong>Neutered: &nbsp; </strong><span> {{pet.neutered}}</span></li> -->
                         <li><strong>Vaccinated: &nbsp; </strong><span> {{pet.vaccinated}}</span></li>
-                        <li><strong>Status: &nbsp; </strong><span> Available</span></li>
+                        <li><strong>Registered: &nbsp; </strong><span> {{pet.registered}}</span></li>
+                        <li *ngIf="pet.status"><strong>Status: &nbsp; </strong><span> Available</span></li>
+                        <li *ngIf="!pet.status"><strong>Status: &nbsp; </strong><span> Taken</span></li>
                      </ul>
                </div>
             </div>

@@ -18,7 +18,9 @@ export class PetService {
       pet.name = element.name;
       pet.gender = element.gender;
       pet.age = element.age;
+      pet.status = element.status;
       pet.neutered = element.neutered;
+      pet.registered = element.registered;
       pet.vaccinated = element.vaccinated;
       pet.size = element.size;
       pet.image = element.image;
