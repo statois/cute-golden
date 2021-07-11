@@ -56,7 +56,7 @@ export const PETS: Pet[] = [
     gender: 'Male', age: "8 weeks", vaccinated: 'yes', size: 'small', price: 1100,
     petCategory: "Golden Retriever",
     registered: "AKC Registered",
-    status: true,
+    status: false,
     description1: "Romeo believe in love, sharing smiles, hello hugs, and goodnight kisses. He believe in playing fair, taking turns, and holding hands or paws in his case. He believe in making wishes come true, and friendships last. If you believe in all of that too, make him yours. He will not let you down and will always be there when you need him.",
   } as Pet,
 
@@ -83,18 +83,18 @@ export const PETS: Pet[] = [
       gender: 'Female', age: "8 weeks", vaccinated: 'yes', size: 'small', price: 1500,
        petCategory: "Golden Retriever",
        registered: "AKC Registered",
-       status: true,
+       status: false,
       description1: "Sarah is a calm and clean female pitbull pup that loves cute outing like going to the restaurant or attractive and classic places. But walking is not that much of her things when going out. If you are looking for a princess you can take along for hangouts or dates, and even work then Sarah is for you. Being a female, she has a strong attraction for Women as compared to Men.",
   } as Pet,
 
-  // {
-  //     id: 'golden-retriever-randy', name: 'RANDY', image: 'assets/img/golden-retriever/puppies/backup/randy.jpeg', cartImage: 'assets/img/cartImage/adopt.jpg',
-  //     gender: 'Male', age: "9 weeks", vaccinated: 'yes', size: 'small', price: 800,
-  //      petCategory: "Golden Retriever",
-          // registered: "AKC Registered",
-          // status: true,
-  //     description1: "Randy is vet checked and up to date on all shots, he goes with 1-year genetic health guarantee so you don't bother about spending on his health. This cutie is UKC registered and love being around other puppies or any playmate. Mostly important, he likes to have his personal toy.",
-  // } as Pet,
+  {
+      id: 'golden-retriever-parblo', name: 'PARBLO', image: 'assets/img/golden-retriever/puppies/backup/parblo.jpg', cartImage: 'assets/img/cartImage/adopt.jpg',
+      gender: 'Male', age: "8 weeks", vaccinated: 'yes', size: 'small', price: 1700,
+      petCategory: "Golden Retriever",
+      registered: "AKC Registered",
+      status: true,
+      description1: "Pablo is vet checked and up to date on all shots, he's a calm nice guy who likes attention and always wanna be with someone around, always ready for adventures. A real companion.",
+  } as Pet,
 
   {
     id: 'golden-retriever-mark', name: 'MARK', image: 'assets/img/golden-retriever/puppies/backup/mark-1.jpg', cartImage: 'assets/img/cartImage/adopt.jpg',
@@ -102,17 +102,17 @@ export const PETS: Pet[] = [
     petCategory: "Golden Retriever",
     registered: "AKC Registered",
     status: true,
-    description1: "Mark is vet checked and up to date on all shots, he goes with 1-year genetic health guarantee so you don't bother about spending on his health. This cutie is UKC registered and love being around other puppies or any playmate. Mostly important, he likes to have his personal toy.",
+    description1: "Mark is vet checked and up to date on all shots, he goes with 1-year genetic health guarantee so you don't bother about spending on his health. This cutie is AKC registered and love being around other puppies or any playmate. Mostly important, he likes to have his personal toy.",
   } as Pet,
 
-  // {
-  //   id: 'golden-retriever-charlie', name: 'CHARLIE', image: 'assets/img/golden-retriever/puppies/backup/charlie.jpeg', cartImage: 'assets/img/cartImage/adopt.jpg',
-  //   gender: 'Male', age: "9 weeks", vaccinated: 'yes', size: 'small', price: 800,
-  //   petCategory: "Golden Retriever",
-      // registered: "AKC Registered",
-      // status: true,
-  //   description1: "Charlie is a very special Golden Retriever Puppy with a great personality! He’s super friendly and likes playing around! He is very affectionate and loves cuddling, and be sure you can count on him for your day to day activities.",
-  // } as Pet,
+  {
+    id: 'golden-retriever-london', name: 'LONDON', image: 'assets/img/golden-retriever/puppies/backup/london.jpg', cartImage: 'assets/img/cartImage/adopt.jpg',
+    gender: 'Male', age: "8 weeks", vaccinated: 'yes', size: 'small', price: 1600,
+    petCategory: "Golden Retriever",
+    registered: "AKC Registered",
+    status: true,
+    description1: "London is a very special Golden Retriever Puppy with a great personality! He’s super friendly and likes playing around! He is very affectionate and loves cuddling, and be sure you can count on him for your day to day activities.",
+  } as Pet,
 
   {
     id: 'golden-retriever-marley', name: 'MARLEY', image: 'assets/img/golden-retriever/puppies/backup/marley.jpg', cartImage: 'assets/img/cartImage/adopt.jpg',
@@ -143,11 +143,29 @@ export const PETS: Pet[] = [
 
   {
     id: 'golden-retriever-luke', name: 'LUKE', image: 'assets/img/golden-retriever/puppies/backup/Luke.jpg', cartImage: 'assets/img/cartImage/adopt.jpg',
-    gender: 'Male', age: "9 weeks", vaccinated: 'yes', size: 'smal', price: 1500,
+    gender: 'Male', age: "9 weeks", vaccinated: 'yes', size: 'small', price: 1500,
     petCategory: "Golden Retriever",
     registered: "AKC Registered",
     status: true,
     description1: "Luke is a calm and cool when it comes to personality, but can also be friendly and loves others around him. This baby is going to make a great puppy and playmate to his family. He likes aeting a lot and be sure he's gonna grow big in a space of no time. He is just adorable and up-to-date on all shots",
+  } as Pet,
+
+  {
+    id: 'pitbull-brenda', name: 'BRENDA', image: 'assets/img/golden-retriever/puppies/backup/brenda.jpg',
+    gender: 'Female', age: "9 Weeks", vaccinated: 'yes', size: 'medium', price: 1600,
+    petCategory: "Golden Retriever",
+    registered: "AKC Registered",
+    status: true,
+    description1: "Here comes Brenda, a little calm and loving princess that can make a good companion wherever you go. She is attachable, loves outing, and would like to seat on the front seat while going by car. She's just awesome.",
+  } as Pet,
+
+  {
+    id: 'pitbull-suzan', name: 'SUZAN', image: 'assets/img/golden-retriever/puppies/backup/Susan.jpg',
+    gender: 'Female', age: "8 Weeks", vaccinated: 'yes', size: 'medium', price: 1700,
+    petCategory: "Golden Retriever",
+    registered: "AKC Registerd",
+    status: true,
+    description1: "A little calm, loving, and obedient princess that can make a good companion wherever you go. She is attachable, loves outing, and would like to seat on the front seat while going by car. She's current on all shots and would say she has a strong health condition.",
   } as Pet,
 
 ];
