@@ -1,13 +1,12 @@
 {
-  "name": "Cute Golden Retrievers",
-  "short_name": "Golden-Retriever",
+  "name": "Gomez Adorable Puppies",
+  "short_name": "Gomez Puppies",
   "theme_color": "#C35D71",
   "background_color": "#fafafa",
   "display": "standalone",
   "scope": "/",
   "start_url": "/",
   "icons": [
-    
     {
       "src": "assets/img/golden-retriever/logo.png",
       "sizes": "512x512",

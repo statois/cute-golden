@@ -1,72 +1,76 @@
 <!-- Section Adoption -->
 <section id="adoption" class="pages">
   <div class="jumbotron" data-stellar-background-ratio="0.5">
-     <!-- Heading -->
-     <div class="jumbo-heading" data-stellar-background-ratio="1.2">
-        <h1>{{pet.petCategory}} - {{pet.name}}</h1>
-     </div>
+    <!-- Heading -->
+    <div class="jumbo-heading" data-stellar-background-ratio="1.2">
+      <h1>{{pet.petCategory}} - {{pet.name}}</h1>
+    </div>
   </div>
   <!-- container-->
-   <div class="container">
-        <!-- Breadcrumb -->
-        <ul class="breadcrumb adopt">
-           <li><a href="../../../../" >Home</a> <span class="divider"></span></li>
-           <li><a href="../../../../pets" >Pets Gallery</a> <span class="divider"></span></li>
-           <li class="active">{{pet.name}}</li>
-        </ul>
-   </div>
-   <div class="container margin1">
-      <div class="row">
-         <div class="col-md-5">
-            <img src="{{pet.image}}" class="center-block img-rounded img-responsive" alt="">
-            <!-- <div id="owl-reviews" class="owl-carousel">
+  <div class="container">
+    <!-- Breadcrumb -->
+    <ul class="breadcrumb adopt">
+      <li><a href="../../../../">Home</a> <span class="divider"></span></li>
+      <li><a href="../../../../pets">{{pet.petCategory}}</a> <span class="divider"></span></li>
+      <li class="active">{{pet.name}}</li>
+    </ul>
+  </div>
+  <div class="container margin1">
+    <div class="row">
+      <div class="col-md-5">
+        <img src="{{pet.image}}" class="center-block img-rounded img-responsive" alt="">
+        <!-- <div id="owl-reviews" class="owl-carousel">
                <a href="{{pet.image}}"><img src="{{pet.image}}" class="center-block img-rounded img-responsive" alt=""></a>
                <a href="{{pet.image}}"><img src="{{pet.image}}" class="center-block img-rounded img-responsive" alt=""></a>
             </div> -->
-         </div>
-         <div class="col-md-7 res-margin">
-            <h3>Pet name:&nbsp; <span> {{pet.name}}</span></h3>
-            <div class="row">
-               <div class="col-sm-5">
-                  <ul class="pet-adopt-info">
-                     <li><strong>Gender: &nbsp; </strong><span> {{pet.gender}}</span></li>
-                     <li><strong>Age: &nbsp; </strong><span> {{pet.age}}</span></li>
-                     <li><strong>Size: &nbsp; </strong><span> {{pet.size}}</span></li>
-                  </ul>
-               </div>
-               <div class="col-sm-5">
-                     <ul class="pet-adopt-info">
-                        <!-- <li><strong>Neutered: &nbsp; </strong><span> {{pet.neutered}}</span></li> -->
-                        <li><strong>Vaccinated: &nbsp; </strong><span> {{pet.vaccinated}}</span></li>
-                        <li><strong>Registered: &nbsp; </strong><span> {{pet.registered}}</span></li>
-                        <li *ngIf="pet.status"><strong>Status: &nbsp; </strong><span> Available</span></li>
-                        <li *ngIf="!pet.status"><strong>Status: &nbsp; </strong><span> Taken</span></li>
-                     </ul>
-               </div>
-            </div>
-            <h3>Price:&nbsp; <span> ${{printPrice(pet.price)}}</span></h3>
-            <!-- <div class="price">Price:  ${{pet.price}}</div> -->
-         </div>
-         <p style="line-height: 1.5em; margin-left: 20px;">{{pet.description1}}</p>				 
-         <!-- ul custom-->
-         <ul class="custom no-margin">
-            <li>Friendly to other dogs</li>
-            <li>Good for Apartments</li>
-            <li>Friendly with Kids</li>
-         </ul>
-         <a href="../checkout/{{pet.id}}" (click)="addToCart()" class="btn" style="margin-left: 20px;">
-            Inquire Now
-         </a>
       </div>
-        <!-- /col-md-7-->
-        <div class="alert mt-5">
-         <h6 class="text-light">Important to note!....: </h6>
-         <p>We first thank you for using our platform to choose your puppy. We believe you taking a pet from us is not with bad intentions (eat, maltreat, rituals.. etc) but rather good intentions which include; looking for a friend, family member, companion, childrens' friend and all known good attitudes towards pets. For we believe pets are part of our everyday lifes, and part of our families, and need to be treated as good as family members are treated. Thanks.
-         </p>
+      <div class="col-md-7 res-margin">
+        <h3>Pet name:&nbsp; <span> {{pet.name}}</span></h3>
+        <div class="row">
+          <div class="col-sm-5">
+            <ul class="pet-adopt-info">
+              <li><strong>Gender: &nbsp; </strong><span> {{pet.gender}}</span></li>
+              <li><strong>Age: &nbsp; </strong><span> {{pet.age}}</span></li>
+              <li><strong>Size: &nbsp; </strong><span> {{pet.size}}</span></li>
+            </ul>
+          </div>
+          <div class="col-sm-5">
+            <ul class="pet-adopt-info">
+              <!-- <li><strong>Neutered: &nbsp; </strong><span> {{pet.neutered}}</span></li> -->
+              <li><strong>Vaccinated: &nbsp; </strong><span> {{pet.vaccinated}}</span></li>
+              <li><strong>Registered: &nbsp; </strong><span> {{pet.registered}}</span></li>
+              <li *ngIf="pet.status"><strong>Status: &nbsp; </strong><span> Available</span></li>
+              <li *ngIf="!pet.status"><strong>Status: &nbsp; </strong><span> Taken</span></li>
+            </ul>
+          </div>
+        </div>
+        <h3>Price:&nbsp; <span> ${{printPrice(pet.price)}}</span></h3>
+        <!-- <div class="price">Price:  ${{pet.price}}</div> -->
       </div>
-      <!-- /alert-->
-   <p class="custom-link"><a href="../../../../pets">« Go back to Pets gallery</a></p>
+      <p style="line-height: 1.5em; margin-left: 20px;">{{pet.description1}}</p>
+      <!-- ul custom-->
+      <ul class="custom no-margin">
+        <li>Friendly to other dogs</li>
+        <li>Good for Apartments</li>
+        <li>Friendly with Kids</li>
+      </ul>
+      <a href="../checkout/{{pet.id}}" (click)="addToCart()" class="btn" style="margin-left: 20px;">
+        Inquire Now
+      </a>
+    </div>
+    <!-- /col-md-7-->
+    <div class="alert mt-5">
+      <h6 class="text-light">Important to note!....: </h6>
+      <p>We first thank you for using our platform to choose your puppy. We believe you taking a pet from us is not with
+        bad intentions (eat, maltreat, rituals.. etc) but rather good intentions which include; looking for a friend,
+        family member, companion, childrens' friend and all known good attitudes towards pets. For we believe pets are
+        part of our everyday lifes, and part of our families, and need to be treated as good as family members are
+        treated. Thanks.
+      </p>
+    </div>
+    <!-- /alert-->
+    <p class="custom-link"><a href="../../../../pets">« Go back to Pets gallery</a></p>
   </div>
-<!-- /container -->
+  <!-- /container -->
 </section>
 <!-- /Section ends -->
