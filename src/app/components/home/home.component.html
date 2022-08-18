@@ -94,17 +94,17 @@
         <div class="col-lg-4 col-sm-6 col-md-6 cat" *ngFor="let pet of pets">
           <div class="isotope-item">
             <div class="adoption-thumb" *ngIf="pet.status">
-              <a href="../pet/{{pet.id}}"><img class="img-responsive img-circle" src="{{pet.image}}"
-                  alt="{{pet.name}}"></a>
+              <a href="../pet/{{pet.id}}"><img class="img-responsive img-circle" src="{{pet.image}}" alt="{{pet.name}}"
+                  style="width: 600px; height: 400px"></a>
               <!-- header-->
               <div class="adopt-header">
                 <h4>{{pet.name}}</h4>
                 <ul class="list-unstyled">
                   <li><strong>Gender:</strong>&nbsp; {{pet.gender}}</li>
                   <li><strong>Age:</strong>&nbsp; {{pet.age}}</li>
-                  <li><strong>Price:<span style="color: #c37c5d;">&nbsp; ${{printPrice(pet.price)}}</span></strong></li>
                   <li><strong>Breed:<span style="color: #c37c5d;">&nbsp; {{pet.petCategory}}</span></strong>
                   </li>
+                  <li><strong>Price:<span style="color: #c37c5d;">&nbsp; ${{printPrice(pet.price)}}</span></strong></li>
                 </ul>
                 <a class="btn" href="../pet/{{pet.id}}">Inquire</a>
               </div>
