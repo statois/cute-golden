@@ -58,7 +58,7 @@ export class HomeComponent implements OnInit {
       {
         name: 'twitter:image',
         content:
-          'https://www.gomezadorablepuppies.com/assets/img/golden-retriever/image-7.jpg',
+          'https://www.gomezadorablespuppies.com/assets/img/golden-retriever/image-7.jpg',
       } as MetaTag,
       {
         name: 'twitter:label1',
@@ -90,7 +90,7 @@ export class HomeComponent implements OnInit {
       {
         property: 'og:image',
         content:
-          'https://www.gomezadorablepuppies.com/assets/img/golden-retriever/image-7.jpg',
+          'https://www.gomezadorablespuppies.com/assets/img/golden-retriever/image-7.jpg',
       } as PropertyTag,
       {
         property: 'og:description',
@@ -114,11 +114,11 @@ export class HomeComponent implements OnInit {
       '@context': 'http://schema.org',
       '@type': 'WebSite',
       name: 'Golden Retriever Puppies',
-      url: 'https://www.gomezadorablepuppies.com',
+      url: 'https://www.gomezadorablespuppies.com',
       sameAs: ['https://instagram.com/gomezadorablepuppies'],
       potentialAction: {
         '@type': 'SearchAction',
-        target: 'https://www.gomezadorablepuppies.com/search/{search_term}',
+        target: 'https://www.gomezadorablespuppies.com/search/{search_term}',
         'query-input': 'required name=search_term',
       },
     }
@@ -133,7 +133,7 @@ export class HomeComponent implements OnInit {
           name: 'Available Puppies',
           description:
             'Shelter healthy and lovely puppies online at little or no cost, and enjoy veterinary services to keep your pets healthy always.',
-          url: 'https://www.gomezadorablepuppies.com/pets',
+          url: 'https://www.gomezadorablespuppies.com/pets',
         },
         {
           '@type': 'SiteNavigationElement',
@@ -141,7 +141,7 @@ export class HomeComponent implements OnInit {
           name: 'About',
           description:
             'Gomez Adorable Puppies help responsible breeders place their pets with caring individuals and families across the U.S. But, more than just a service, the House is a community of dog lovers whose mission is to make lives better by placing healthy puppies into happy homes.',
-          url: 'https://www.gomezadorablepuppies.com/about',
+          url: 'https://www.gomezadorablespuppies.com/about',
         },
         {
           '@type': 'SiteNavigationElement',
@@ -149,7 +149,7 @@ export class HomeComponent implements OnInit {
           name: 'Reviews',
           description:
             'What our happy customers say about our healthy and loveable puppies. It is important to note that some of our pets where abandonned and neglected along the street, and we always make sure to look for such pets so as to treat and feed them in order to be ready and healthy for a new home.',
-          url: 'https://www.gomezadorablepuppies.com/testimonial',
+          url: 'https://www.gomezadorablespuppies.com/testimonial',
         },
         {
           '@type': 'SiteNavigationElement',
@@ -157,7 +157,7 @@ export class HomeComponent implements OnInit {
           name: 'Contact',
           description:
             "We believe pets are part of our everyday lifes and part of our families. They provide us with companionship but also with emotional support, reduce our stress level, sense of loneliness and help us to increase our social activities and add to a child's self-esteem and positive emotional development. Your worries about pets are our concern.",
-          url: 'https://www.gomezadorablepuppies.com/contact',
+          url: 'https://www.gomezadorablespuppies.com/contact',
         },
       ],
     }
